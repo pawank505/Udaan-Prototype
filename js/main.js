@@ -79,3 +79,46 @@
     
 })(jQuery);
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const courses = document.querySelectorAll('.course-card'); // Get all course elements
+    const itemsPerPage = 4; // Number of items per page
+    let currentPage = 1;
+
+    function showPage(page) {
+        // Hide all courses
+        courses.forEach((course, index) => {
+            course.style.display = 'none';
+        });
+
+        // Show only the courses for the current page
+        const start = (page - 1) * itemsPerPage;
+        const end = page * itemsPerPage;
+        for (let i = start; i < end && i < courses.length; i++) {
+            courses[i].style.display = 'block';
+        }
+    }
+
+    function updateButtons() {
+        document.querySelector('.prev-page').disabled = currentPage === 1;
+        document.querySelector('.next-page').disabled = currentPage * itemsPerPage >= courses.length;
+    }
+
+    // Initial display of courses
+    showPage(currentPage);
+    updateButtons();
+
+    // Next and previous button functionality
+    document.querySelector('.next-page').addEventListener('click', () => {
+        currentPage++;
+        showPage(currentPage);
+        updateButtons();
+    });
+
+    document.querySelector('.prev-page').addEventListener('click', () => {
+        currentPage--;
+        showPage(currentPage);
+        updateButtons();
+    });
+});
+
