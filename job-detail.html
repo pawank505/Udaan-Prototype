@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/job-details.css" rel="stylesheet">
 </head>
 
 <body>
@@ -131,48 +132,53 @@
                             </ul>
                         </div>
         
-                        <div class="">
-                            <h4 class="mb-4">Apply For The Job</h4>
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control" placeholder="Your Name">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <input type="email" class="form-control" placeholder="Your Email">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control" placeholder="Portfolio Website">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <input type="file" class="form-control bg-white">
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control" rows="5" placeholder="Coverletter"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100" type="submit">Apply Now</button>
-                                    </div>
-                                </div>
+                        <div class="form-container">
+                            <h1>Apply for This Job</h1>
+                            <form action="#" method="post">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                    
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                    
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                    
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                    
+                                <label for="cv">Link to CV/Resume *</label>
+                                <input type="file" id="cv" name="cv" required>
+                    
+                                <label for="linkedin">LinkedIn URL</label>
+                                <input type="url" id="linkedin" name="linkedin">
+                    
+                                <label for="website">Other Website</label>
+                                <input type="url" id="website" name="website">
+                    
+                                <label for="comments">Additional Comments</label>
+                                <textarea id="comments" name="comments"></textarea>
+                    
+                                <button type="submit">Apply Now</button>
                             </form>
                         </div>
-                    </div>
         
-                    <div class="col-lg-4">
-                        <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
-                            <h4 class="mb-4">Job Summery</h4>
-                            <p><i class="fa fa-angle-right text-primary me-2"></i>Published On: 01 Jan, 2045</p>
-                            <p><i class="fa fa-angle-right text-primary me-2"></i>Vacancy: 123 Position</p>
-                            <p><i class="fa fa-angle-right text-primary me-2"></i>Job Nature: Full Time</p>
-                            <p><i class="fa fa-angle-right text-primary me-2"></i>Salary: $123 - $456</p>
-                            <p><i class="fa fa-angle-right text-primary me-2"></i>Location: New York, USA</p>
-                            <p class="m-0"><i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01 Jan, 2045</p>
+                        <div class="col-lg-4">
+                            <div class="job-summery-container">
+                                <h4 class="section-title">Job Summery</h4>
+                                <p><i class="fa fa-angle-right text-primary"></i>Published On: 01 Jan, 2045</p>
+                                <p><i class="fa fa-angle-right text-primary"></i>Vacancy: 123 Position</p>
+                                <p><i class="fa fa-angle-right text-primary"></i>Job Nature: Full Time</p>
+                                <p><i class="fa fa-angle-right text-primary"></i>Salary: $123 - $456</p>
+                                <p><i class="fa fa-angle-right text-primary"></i>Location: New York, USA</p>
+                                <p><i class="fa fa-angle-right text-primary"></i>Date Line: 01 Jan, 2045</p>
+                            </div>
+                            <div class="company-detail-container">
+                                <h4 class="section-title">Company Detail</h4>
+                                <p class="m-0">Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum sadipscing elitr vero dolores. Lorem dolore elitr justo et no gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum lorem diam. Et lorem magna eirmod est et et sanctus et, kasd clita labore.</p>
+                            </div>
                         </div>
-                        <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
-                            <h4 class="mb-4">Company Detail</h4>
-                            <p class="m-0">Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum sadipscing elitr vero dolores. Lorem dolore elitr justo et no gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum lorem diam. Et lorem magna eirmod est et et sanctus et, kasd clita labore.</p>
-                        </div>
-                    </div>
+                        
                 </div>
             </div>
         </div>

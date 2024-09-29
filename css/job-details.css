@@ -1,0 +1,120 @@
+
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    margin-left: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+input, textarea {
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff6f6;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #540d6e;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #540d6e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3e084b;
+}
+
+input[type="url"], input[type="email"], input[type="text"], input[type="tel"] {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+/* Container for job summary and company details */
+.col-lg-4 {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+/* Common styles for both containers */
+.job-summery-container, .company-detail-container {
+    background-color: #f0f2f4c6; /* Similar to Bootstrap's 'bg-light' */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding inside the container */
+    margin-bottom: 20px; /* Space between the two sections */
+    animation: slideInUp 1s ease-out; /* Optional animation */
+    width: 400px;
+}
+
+/* Section titles styling */
+.section-title {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 1.25rem; /* Font size for the heading */
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 10px; /* Space below each paragraph */
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Icon and text-primary classes */
+.fa-angle-right {
+    margin-right: 8px;
+    color: #007bff; /* Custom blue color similar to 'text-primary' */
+}
+
+/* Animation for slideInUp (if needed) */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
