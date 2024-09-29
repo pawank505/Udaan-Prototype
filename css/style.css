@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B074;
+    --primary: #f66b08;
     --secondary: #2B9BFF;
     --light: #EFFDF5;
     --dark: #2B3940;
@@ -28,7 +28,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
@@ -283,7 +282,9 @@
     border-color: rgba(0, 0, 0, .08);
     box-shadow: none;
 }
-
+.logoimg{
+    width: 50px;
+}
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item,
