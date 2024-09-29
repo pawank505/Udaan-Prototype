@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Posting Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .job-posting-form {
+        background-color: #f0fff4;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #45a049;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 10px;
+        color: #45a049;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="url"],
+      input[type="number"],
+      select,
+      textarea {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #45a049;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: 2px solid #45a049;
+      }
+
+      select {
+        padding: 8px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="job-posting-form">
+      <h1>Create Job Posting</h1>
+
+      <form action="#" method="POST">
+        <!-- Job Details -->
+        <h2>Job Details</h2>
+
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" required /><br />
+
+        <label for="job-description">Job Description:</label>
+        <textarea
+          id="job-description"
+          name="job-description"
+          rows="5"
+          required
+        ></textarea
+        ><br />
+
+        <label for="job-location">Job Location:</label>
+        <input
+          type="text"
+          id="job-location"
+          name="job-location"
+          required
+        /><br />
+
+        <label for="job-type">Job Type:</label>
+        <select id="job-type" name="job-type" required>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Contract">Contract</option>
+          <option value="Internship">Internship</option>
+          <option value="Remote">Remote</option></select
+        ><br />
+
+        <label for="salary">Salary Range:</label>
+        <input
+          type="text"
+          id="salary"
+          name="salary"
+          placeholder="e.g., 50,000 - 70,000"
+          required
+        /><br />
+
+        <label for="experience">Years of Experience:</label>
+        <select id="experience" name="experience" required>
+          <option value="0-1">0-1</option>
+          <option value="2-5">2-5</option>
+          <option value="6-10">6-10</option>
+          <option value="10+">10+</option></select
+        ><br />
+
+        <label for="skills">Required Skills:</label>
+        <input
+          type="text"
+          id="skills"
+          name="skills"
+          placeholder="e.g., JavaScript, SQL, Teamwork"
+          required
+        /><br />
+
+        <!-- Company Information -->
+        <h2>Company Information</h2>
+
+        <label for="company-name">Company Name:</label>
+        <input
+          type="text"
+          id="company-name"
+          name="company-name"
+          required
+        /><br />
+
+        <label for="company-website">Company Website:</label>
+        <input
+          type="url"
+          id="company-website"
+          name="company-website"
+          placeholder="https://example.com"
+        /><br />
+
+        <label for="contact-email">Contact Email:</label>
+        <input
+          type="email"
+          id="contact-email"
+          name="contact-email"
+          required
+        /><br />
+        <label for="contact-phone">Contact Phone:</label>
+        <input type="tel" id="contact-phone" name="contact-phone" /><br />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Post Job" />
+      </form>
+    </div>
+  </body>
+</html>

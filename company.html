@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employer Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .registration-form {
+        background-color: #f0fff4;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #45a049;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 10px;
+        color: #45a049;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="url"],
+      input[type="tel"],
+      input[type="password"],
+      select {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #45a049;
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      input:focus {
+        outline: 2px solid #45a049;
+      }
+
+      select {
+        padding: 8px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="registration-form">
+      <h1>Employer Registration</h1>
+
+      <!-- Company Information -->
+      <h2>Company Information</h2>
+      <form action="index.html" method="get">
+        <label for="company-name">Company Name:</label>
+        <input
+          type="text"
+          id="company-name"
+          name="company-name"
+          required
+        /><br />
+
+        <label for="industry">Industry:</label>
+        <select id="industry" name="industry" required>
+          <option value="IT">IT</option>
+          <option value="Finance">Finance</option>
+          <option value="Healthcare">Healthcare</option></select
+        ><br />
+
+        <label for="company-website">Company Website:</label>
+        <input type="url" id="company-website" name="company-website" /><br />
+
+        <label for="address">Company Address:</label>
+        <input type="text" id="address" name="address" required /><br />
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required /><br />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required /><br />
+
+        <label for="zip-code">Zip Code:</label>
+        <input type="text" id="zip-code" name="zip-code" required /><br />
+
+        <label for="company-size">Company Size:</label>
+        <select id="company-size" name="company-size" required>
+          <option value="1-50">1-50</option>
+          <option value="51-200">51-200</option>
+          <option value="201-500">201-500</option>
+          <option value="500+">500+</option></select
+        ><br />
+
+        <label for="gst-no">GST No.:</label>
+        <input type="text" id="gst-no" name="gst-no" required /><br />
+
+        <label for="company-reg-no">Company Registration No.:</label>
+        <input
+          type="text"
+          id="company-reg-no"
+          name="company-reg-no"
+          required
+        /><br />
+
+        <!-- Contact Person Information -->
+        <h2>Contact Person Information</h2>
+        <label for="contact-name">Full Name:</label>
+        <input
+          type="text"
+          id="contact-name"
+          name="contact-name"
+          required
+        /><br />
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" required /><br />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required /><br />
+
+        <!-- Login Information -->
+        <h2>Login Information</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        /><br />
+
+        <!-- Job Posting Preferences -->
+        <h2>Job Posting Preferences</h2>
+        <label for="job-category">Job Category:</label>
+        <select id="job-category" name="job-category" required>
+          <option value="IT">IT</option>
+          <option value="Marketing">Marketing</option>
+          <option value="HR">HR</option></select
+        ><br />
+
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required /> I agree to
+          the terms and conditions </label
+        ><br />
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+  </body>
+</html>
