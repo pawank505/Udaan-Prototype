@@ -457,3 +457,20 @@
 .course-card button:hover {
     background-color: #45a049;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.pagination button:hover {
+    background-color: #45a049;
+}

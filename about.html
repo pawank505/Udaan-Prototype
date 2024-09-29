@@ -82,111 +82,128 @@
 
 
         <!-- Header End -->
-        <div class="container-xxl py-5 bg-dark page-header mb-5">
-            <div class="container my-5 pt-5 pb-4">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">About</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
+        <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
         <!-- Header End -->
-
-        <section class="courses">
-            <div class="container">
-                <h2>Available Courses</h2>
-                <div class="course-grid">
-                    <!-- Web Development Course -->
-                    <div class="course-card">
-                        <img src="web-development.jpg" alt="Web Development" style="width:100%; height: 150px; object-fit: cover;">
+        <!-- Courses Section Start -->
+        <section id="courses" class="container mt-5">
+            <div class="row">
+                <!-- Existing Course Cards (Updated with Real Images) -->
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="./img/webdev.avif" alt="Web Development"
+                            style="width:100%; height: 150px; object-fit: cover;">
                         <h3>Web Development</h3>
-                        <p>Master the fundamentals of HTML, CSS, JavaScript, and more to build modern websites.</p>
+                        <p>Learn how to build dynamic websites using HTML, CSS, JavaScript, and frameworks.</p>
                         <button>Enroll Now</button>
                     </div>
-                    <!-- Data Science Course -->
-                    <div class="course-card">
-                        <img src="data-science.jpg" alt="Data Science" style="width:100%; height: 150px; object-fit: cover;">
+                </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="./img/datascience.avif" alt="Data Science"
+                            style="width:100%; height: 150px; object-fit: cover;">
                         <h3>Data Science</h3>
-                        <p>Learn data analysis, machine learning, and AI techniques to unlock insights from data.</p>
+                        <p>Analyze large datasets to extract meaningful insights and make data-driven decisions.</p>
                         <button>Enroll Now</button>
                     </div>
-                    <!-- AI and Machine Learning Course -->
-                    <div class="course-card">
-                        <img src="ai-ml.jpg" alt="AI and Machine Learning" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>AI and Machine Learning</h3>
-                        <p>Build intelligent systems using deep learning, neural networks, and AI algorithms.</p>
+                </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="./img//app.avif" alt="App Development"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>App Development</h3>
+                        <p>Create mobile applications for iOS and Android platforms using modern tools.</p>
                         <button>Enroll Now</button>
                     </div>
-                    <!-- Cybersecurity Course -->
-                    <div class="course-card">
-                        <img src="cybersecurity.jpg" alt="Cybersecurity" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Cybersecurity</h3>
-                        <p>Understand security threats and protect networks, data, and systems from cyberattacks.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Digital Marketing Course -->
-                    <div class="course-card">
-                        <img src="digital-marketing.jpg" alt="Digital Marketing" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Digital Marketing</h3>
-                        <p>Learn strategies for SEO, content marketing, social media campaigns, and more.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Graphic Design Course -->
-                    <div class="course-card">
-                        <img src="graphic-design.jpg" alt="Graphic Design" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Graphic Design</h3>
-                        <p>Design stunning visuals using tools like Adobe Photoshop, Illustrator, and more.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Project Management Course -->
-                    <div class="course-card">
-                        <img src="project-management.jpg" alt="Project Management" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Project Management</h3>
-                        <p>Master the art of managing projects, timelines, resources, and stakeholders efficiently.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Photography Course -->
-                    <div class="course-card">
-                        <img src="photography.jpg" alt="Photography" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Photography</h3>
-                        <p>Learn professional photography techniques and editing for stunning visuals.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Business Communication Course -->
-                    <div class="course-card">
-                        <img src="business-communication.jpg" alt="Business Communication" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Business Communication</h3>
-                        <p>Enhance your communication skills for effective workplace interaction and presentations.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Public Speaking Course -->
-                    <div class="course-card">
-                        <img src="public-speaking.jpg" alt="Public Speaking" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Public Speaking</h3>
-                        <p>Overcome stage fear and deliver impactful speeches confidently to any audience.</p>
-                        <button>Enroll Now</button>
-                    </div>
-                    <!-- Finance Management Course -->
-                    <div class="course-card">
-                        <img src="finance-management.jpg" alt="Finance Management" style="width:100%; height: 150px; object-fit: cover;">
-                        <h3>Finance Management</h3>
-                        <p>Understand financial principles, budgeting, and investment strategies for personal growth.</p>
+                </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="./img/machine.avif" alt="Machine Learning"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Machine Learning</h3>
+                        <p>Dive into ML algorithms and build predictive models to solve real-world problems.</p>
                         <button>Enroll Now</button>
                     </div>
                 </div>
 
-                <!-- Pagination Controls -->
-                <div class="pagination">
-                    <button class="prev-page">Previous</button>
-                    <button class="next-page">Next</button>
+                <!-- Additional Course Cards -->
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+                            alt="Artificial Intelligence" style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Explore AI technologies like machine learning, deep learning, and neural networks.</p>
+                        <button>Enroll Now</button>
+                    </div>
                 </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1593642631928-7b43878e84a6"
+                            alt="Blockchain Technology" style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Blockchain Technology</h3>
+                        <p>Learn the fundamentals of blockchain and how it's changing industries.</p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1593642631928-7b43878e84a6" alt="Cybersecurity"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Cybersecurity</h3>
+                        <p>Understand how to protect networks, devices, and data from unauthorized access.</p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1573154008325-9b4c0f1de62f" alt="Digital Marketing"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Digital Marketing</h3>
+                        <p>Master online marketing techniques to boost business growth and engagement.</p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- More existing courses -->
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1585552767677-8c320fb6ef66" alt="Finance Management"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Finance Management</h3>
+                        <p>Understand financial principles, budgeting, and investment strategies for personal growth.
+                        </p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Additional course placeholders -->
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1542744095-e4d9e6a7f86d" alt="Ethical Hacking"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Ethical Hacking</h3>
+                        <p>Learn how to penetrate systems legally and protect data against cyber attacks.</p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 course-card">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1582306601964-c31c87914c94" alt="Cloud Computing"
+                            style="width:100%; height: 150px; object-fit: cover;">
+                        <h3>Cloud Computing</h3>
+                        <p>Understand cloud infrastructure and services, and how to deploy scalable applications.</p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination or load more button -->
+            <div class="pagination">
+                <button class="prev-page">Previous</button>
+                <button class="next-page">Next</button>
             </div>
         </section>
-    
+        <!-- Courses Section End -->
+
         <!-- About End -->
 
 
